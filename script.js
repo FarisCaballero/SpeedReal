@@ -188,7 +188,221 @@ function getInstructions(emergency) {
           <div class="instruction-box2">Wrap in blankets or warm clothing, covering head and neck.</div>
           <div class="instruction-box3">Insulate from the cold ground and provide warm liquids if conscious.</div>
         </div>`;
-    
+    case 'severe allergic reaction (anaphylaxis)':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Help the person sit or lie down in a comfortable position.</div>
+          <div class="instruction-box2">Assist them in using their epinephrine auto-injector (EpiPen) if they have one.</div>
+          <div class="instruction-box3">Monitor the person's breathing and vital signs.</div>
+          <div class="instruction-box4">Stay with the person until medical help arrives.</div>
+        </div>`;
+case 'asthma attack':
+      return `
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Help the person sit upright and assist them in using their inhaler.</div>
+          <div class="instruction-box2">Encourage slow, deep breaths.</div>
+          <div class="instruction-box3">If symptoms worsen or they have difficulty breathing, call 999.</div>
+          <div class="instruction-box4">Reassure the person and stay with them until help arrives.</div>
+        </div>`;
+case 'choking':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if the person becomes unconscious.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Encourage the person to cough forcefully.</div>
+          <div class="instruction-box2">If the person cannot speak, breathe, or cough, perform abdominal thrusts (Heimlich maneuver).</div>
+          <div class="instruction-box3">If the person becomes unconscious, begin CPR.</div>
+          <div class="instruction-box4">Continue providing assistance until medical help arrives.</div>
+        </div>`;
+case 'severe bleeding (hemorrhage)':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if bleeding does not stop or is severe.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Remove any clothing or debris from the wound.</div>
+          <div class="instruction-box2">Apply direct pressure to the wound using a clean cloth or bandage.</div>
+          <div class="instruction-box3">Help the injured person lie down.</div>
+          <div class="instruction-box4">Add more bandages as needed.</div>
+          <div class="instruction-box5">Monitor the person's condition while waiting for medical help.</div>
+        </div>`;
+case 'head injury':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if there is confusion, loss of consciousness, or vomiting.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Keep the person still and encourage them not to move.</div>
+          <div class="instruction-box2">Apply a cold pack or cloth to the injured area to reduce swelling.</div>
+          <div class="instruction-box3">Monitor the person's condition and seek medical help promptly.</div>
+        </div>`;
+case 'seizure':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if the seizure lasts longer than five minutes.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Move them only if they're in danger.</div>
+          <div class="instruction-box2">Cushion their head if they're on the ground.</div>
+          <div class="instruction-box3">Loosen any tight clothing around their neck.</div>
+          <div class="instruction-box4">Turn them on to their side after their convulsions stop.</div>
+          <div class="instruction-box5">Stay with them and talk to them calmly until they recover.</div>
+          <div class="instruction-box6">Note the time the seizure starts and finishes.</div>
+        </div>`;
+case 'shock (hypovolemic, septic, anaphylactic)':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if there are signs of severe shock.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Lay the person flat and elevate their legs slightly if no spinal injury is suspected.</div>
+          <div class="instruction-box2">Keep the person still, warm, and comfortable.</div>
+          <div class="instruction-box3">Begin CPR if there are no signs of life.</div>
+          <div class="instruction-box4">Loosen tight clothing and cover the person with a blanket to prevent chilling.</div>
+          <div class="instruction-box5">Monitor the person's condition and provide reassurance.</div>
+        </div>`;
+case 'fractures (broken bones)':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if the fracture involves the head, neck, or spine.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Remove clothing from the injured area.</div>
+          <div class="instruction-box2">Do not attempt to move or reposition the injured limb.</div>
+          <div class="instruction-box3">Immobilize the injured area using a splint or improvised materials.</div>
+          <div class="instruction-box4">Apply a cold pack or cloth to reduce swelling and pain.</div>
+          <div class="instruction-box5">Monitor the person's condition and seek medical help promptly.</div>
+        </div>`;
+case 'cardiac arrest':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Begin CPR immediately.</div>
+          <div class="instruction-box2">Use an automated external defibrillator (AED) if available and follow the prompts.</div>
+          <div class="instruction-box3">Continue CPR until medical help arrives.</div>
+        </div>`;
+case 'chest pain (angina)':
+      return `
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Instruct the casualty to stop what they are doing and help them sit down.</div>
+          <div class="instruction-box2">Try to reassure them and make them comfortable.</div>
+          <div class="instruction-box3">If the person has been prescribed nitroglycerin and it is within reach, assist them in taking it.</div>
+          <div class="instruction-box4">Monitor the person's condition and call 999 if symptoms worsen or persist.</div>
+        </div>`;
+case 'appendicitis':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Help the person lie down and keep them still.</div>
+          <div class="instruction-box2">Do not give the person anything to eat or drink.</div>
+          <div class="instruction-box3">Apply a cold pack or cloth to the area to help reduce pain.</div>
+          <div class="instruction-box4">Monitor the person's condition and await medical help.</div>
+        </div>`;
+case 'acute abdominal pain':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Help the person lie down and keep them still.</div>
+          <div class="instruction-box2">Place a hot water bottle or heated wheat bag on the abdomen.</div>
+          <div class="instruction-box3">Soak in a warm bath.</div>
+          <div class="instruction-box4">Drink plenty of clear fluids such as water.</div>
+          <div class="instruction-box5">Reduce intake of coffee, tea, and alcohol.</div>
+          <div class="instruction-box6">Monitor the person's condition and await medical help.</div>
+        </div>`;
+case 'spinal injury':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Keep the person still and do not move them unless absolutely necessary.</div>
+          <div class="instruction-box2">Place heavy towels or rolled sheets on both sides of the neck or hold the head and neck to prevent movement.</div>
+          <div class="instruction-box3">Avoid moving the head or neck.</div>
+          <div class="instruction-box4">Reassure and keep the person calm if conscious.</div>
+          <div class="instruction-box5">Be prepared to perform CPR if unconscious or not breathing.</div>
+          <div class="instruction-box6">Do not attempt to straighten the person's body or move them without medical help.</div>
+        </div>`;
+case 'eye injury':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Seek medical help immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Do not rub or apply pressure to the eye.</div>
+          <div class="instruction-box2">Gently flush the eye with clean water if there is debris or chemical exposure.</div>
+          <div class="instruction-box3">Cover the injured eye with a clean cloth or sterile dressing.</div>
+        </div>`;
+case 'electric shock':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Seek medical help immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Do not touch the person if they are still in contact with the electrical source.</div>
+          <div class="instruction-box2">Turn off the power source if possible or move the person away from the source using a non-conductive object.</div>
+          <div class="instruction-box3">Check the person's breathing and pulse. Perform CPR if necessary.</div>
+        </div>`;
+case 'eclampsia (pregnancy-related hypertension)':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Help the person lie on their left side to improve blood flow to the heart.</div>
+          <div class="instruction-box2">Loosen any tight clothing and keep the person cool.</div>
+          <div class="instruction-box3">Do not give the person anything to eat or drink.</div>
+          <div class="instruction-box4">Monitor the person's condition and await medical help.</div>
+        </div>`;
+case 'pneumothorax (collapsed lung)':
+      return `
+        <div class="alert alert-danger">
+          <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
+        </div>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Help the person sit in a comfortable position, leaning slightly forward.</div>
+          <div class="instruction-box2">Encourage shallow breathing to minimize discomfort.</div>
+          <div class="instruction-box3">Do not attempt to remove or cover the injury site.</div>
+          <div class="instruction-box4">Monitor the person's condition and await medical help.</div>
+        </div>`;
+case 'fainting (syncope)':
+      return `
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
+          <div class="instruction-box1">Lay the person flat on their back and raise their legs above the level of their heart.</div>
+          <div class="instruction-box2">Prop up the person's legs about 12 inches (30 centimeters).</div>
+          <div class="instruction-box3">Loosen any tight clothing around their neck and chest.</div>
+          <div class="instruction-box4">Don't get the person up too fast to reduce the chance of fainting again.</div>
+          <div class="instruction-box5">Check their breathing and pulse. Perform CPR if necessary.</div>
+          <div class="instruction-box6">If the person does not regain consciousness within a minute or two, seek medical help.</div>
+        </div>`;
+
     // Add more cases as needed for each emergency
     default:
       return null;
