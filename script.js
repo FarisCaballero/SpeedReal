@@ -91,7 +91,7 @@ const emergencies = [
             <div class="instruction-box3">If the person has been prescribed nitroglycerin and it is within reach, assist them in taking it.</div>
             <div class="instruction-box4">Monitor the person's condition while waiting for medical help.</div>
           </div>`;
-      case 'stroke':
+      case 'sudden weakness or slurred speech (stroke)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> This situation requires professional care. Please call <strong>999</strong> immediately.
@@ -103,7 +103,7 @@ const emergencies = [
             <div class="instruction-box">Do not give the person anything to eat or drink.</div>
             <div class="instruction-box">Monitor the person's condition while waiting for medical help.</div>
           </div>`;
-      case 'burns':
+      case 'burns or scalds':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> If severe or covering a large area, seek medical help immediately.
@@ -142,7 +142,7 @@ const emergencies = [
             <div class="instruction-box4">Do not attempt to induce vomiting.</div>
             <div class="instruction-box5">Provide information about the type and amount of drug taken to medical professionals.</div>
           </div>`;
-      case 'diabetic emergencies':
+      case 'feeling weak or dizzy from diabetes':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if unconscious or having a seizure.
@@ -167,7 +167,7 @@ const emergencies = [
             <div class="instruction-box4">Check for breathing and pulse. Start CPR if necessary.</div>
             <div class="instruction-box5">Place the person in the recovery position if breathing.</div>
           </div>`;
-      case 'heat stroke':
+      case 'overheating or heat stroke':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Seek medical help immediately.
@@ -178,7 +178,7 @@ const emergencies = [
             <div class="instruction-box2">Cool the person with water and ice packs.</div>
             <div class="instruction-box3">Cover with cool, damp sheets and offer water if able to swallow.</div>
           </div>`;
-      case 'hypothermia':
+      case 'freezing cold and shivering (hypothermia)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Seek medical help if necessary.
@@ -189,7 +189,7 @@ const emergencies = [
             <div class="instruction-box2">Wrap in blankets or warm clothing, covering head and neck.</div>
             <div class="instruction-box3">Insulate from the cold ground and provide warm liquids if conscious.</div>
           </div>`;
-      case 'severe allergic reaction (anaphylaxis)':
+      case 'swelling or breathing trouble due to allergic reaction (anaphylaxis)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
@@ -222,7 +222,7 @@ const emergencies = [
             <div class="instruction-box3">If the person becomes unconscious, begin CPR.</div>
             <div class="instruction-box4">Continue providing assistance until medical help arrives.</div>
           </div>`;
-  case 'severe bleeding (hemorrhage)':
+  case 'heavy bleeding that won’t stop (hemorrhage)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if bleeding does not stop or is severe.
@@ -235,7 +235,7 @@ const emergencies = [
             <div class="instruction-box4">Add more bandages as needed.</div>
             <div class="instruction-box5">Monitor the person's condition while waiting for medical help.</div>
           </div>`;
-  case 'head injury':
+  case 'serious head injury':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if there is confusion, loss of consciousness, or vomiting.
@@ -246,7 +246,7 @@ const emergencies = [
             <div class="instruction-box2">Apply a cold pack or cloth to the injured area to reduce swelling.</div>
             <div class="instruction-box3">Monitor the person's condition and seek medical help promptly.</div>
           </div>`;
-  case 'seizure':
+  case 'shaking or uncontrollable movements (seizure)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if the seizure lasts longer than five minutes.
@@ -260,7 +260,7 @@ const emergencies = [
             <div class="instruction-box5">Stay with them and talk to them calmly until they recover.</div>
             <div class="instruction-box6">Note the time the seizure starts and finishes.</div>
           </div>`;
-  case 'shock (hypovolemic, septic, anaphylactic)':
+  case 'shock (feeling cold, faint, or weak)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if there are signs of severe shock.
@@ -273,7 +273,7 @@ const emergencies = [
             <div class="instruction-box4">Loosen tight clothing and cover the person with a blanket to prevent chilling.</div>
             <div class="instruction-box5">Monitor the person's condition and provide reassurance.</div>
           </div>`;
-  case 'fractures (broken bones)':
+  case 'broken bone (fracture)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 if the fracture involves the head, neck, or spine.
@@ -286,7 +286,7 @@ const emergencies = [
             <div class="instruction-box4">Apply a cold pack or cloth to reduce swelling and pain.</div>
             <div class="instruction-box5">Monitor the person's condition and seek medical help promptly.</div>
           </div>`;
-  case 'cardiac arrest':
+  case 'heart stopped beating (cardiac arrest)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
@@ -297,7 +297,7 @@ const emergencies = [
             <div class="instruction-box2">Use an automated external defibrillator (AED) if available and follow the prompts.</div>
             <div class="instruction-box3">Continue CPR until medical help arrives.</div>
           </div>`;
-  case 'chest pain (angina)':
+  case 'tight or squeezing chest pain (angina)':
         return `
           <div class="alert alert-info">
             <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
@@ -306,7 +306,7 @@ const emergencies = [
             <div class="instruction-box3">If the person has been prescribed nitroglycerin and it is within reach, assist them in taking it.</div>
             <div class="instruction-box4">Monitor the person's condition and call 999 if symptoms worsen or persist.</div>
           </div>`;
-  case 'appendicitis':
+  case 'severe pain in lower belly (appendicitis)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
@@ -318,7 +318,7 @@ const emergencies = [
             <div class="instruction-box3">Apply a cold pack or cloth to the area to help reduce pain.</div>
             <div class="instruction-box4">Monitor the person's condition and await medical help.</div>
           </div>`;
-  case 'acute abdominal pain':
+  case 'sudden severe belly pain':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
@@ -332,7 +332,7 @@ const emergencies = [
             <div class="instruction-box5">Reduce intake of coffee, tea, and alcohol.</div>
             <div class="instruction-box6">Monitor the person's condition and await medical help.</div>
           </div>`;
-  case 'spinal injury':
+  case 'serious back or spine injury':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
@@ -368,7 +368,7 @@ const emergencies = [
             <div class="instruction-box2">Turn off the power source if possible or move the person away from the source using a non-conductive object.</div>
             <div class="instruction-box3">Check the person's breathing and pulse. Perform CPR if necessary.</div>
           </div>`;
-  case 'eclampsia (pregnancy-related hypertension)':
+  case 'seizures during pregnancy (eclampsia)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
@@ -380,7 +380,7 @@ const emergencies = [
             <div class="instruction-box3">Do not give the person anything to eat or drink.</div>
             <div class="instruction-box4">Monitor the person's condition and await medical help.</div>
           </div>`;
-  case 'pneumothorax (collapsed lung)':
+  case 'seizures during pregnancy (eclampsia)':
         return `
           <div class="alert alert-danger">
             <i class="fas fa-phone-alt"></i> <strong>Emergency!</strong> Call 999 immediately.
@@ -392,7 +392,7 @@ const emergencies = [
             <div class="instruction-box3">Do not attempt to remove or cover the injury site.</div>
             <div class="instruction-box4">Monitor the person's condition and await medical help.</div>
           </div>`;
-  case 'fainting (syncope)':
+  case 'fainting or passing out (syncope)':
         return `
           <div class="alert alert-info">
             <i class="fas fa-info-circle"></i> <h5>Steps to take:</h5>
